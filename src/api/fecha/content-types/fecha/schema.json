@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fechas",
+  "info": {
+    "singularName": "fecha",
+    "pluralName": "fechas",
+    "displayName": "InstanciaCurso",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Localidad": {
+      "type": "string"
+    },
+    "Dia": {
+      "type": "enumeration",
+      "enum": [
+        "Maandag",
+        "Dinsdag",
+        "Woensdag",
+        "Donderdag",
+        "Vrijdag",
+        "Zaterdag",
+        "Zondag"
+      ]
+    },
+    "Hora": {
+      "type": "time"
+    },
+    "fechas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.fechas10"
+    },
+    "precio": {
+      "type": "integer"
+    },
+    "fechasid": {
+      "type": "uid"
+    },
+    "subscripcions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::subscripcion.subscripcion"
+    }
+  }
+}

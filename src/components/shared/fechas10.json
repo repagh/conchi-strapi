@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_shared_fechas10s",
+  "info": {
+    "displayName": "Fechas10",
+    "icon": "hashtag"
+  },
+  "options": {},
+  "attributes": {
+    "start": {
+      "type": "date"
+    },
+    "dia2": {
+      "type": "date"
+    },
+    "dia3": {
+      "type": "date"
+    },
+    "dia4": {
+      "type": "date"
+    },
+    "dia5": {
+      "type": "date"
+    },
+    "dia6": {
+      "type": "date"
+    },
+    "dia7": {
+      "type": "date"
+    },
+    "dia8": {
+      "type": "date"
+    },
+    "dia9": {
+      "type": "date"
+    },
+    "dia10": {
+      "type": "date"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscripcions",
+  "info": {
+    "singularName": "subscripcion",
+    "pluralName": "subscripcions",
+    "displayName": "Subscripcion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "alumno": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::alumno.alumno"
+    },
+    "instancia_curso": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fecha.fecha"
+    }
+  }
+}
