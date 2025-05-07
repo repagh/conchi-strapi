@@ -55,6 +55,12 @@
     },
     "idcurso": {
       "type": "uid"
+    },
+    "instancia_cursos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fecha.fecha",
+      "mappedBy": "curso"
     }
   }
 }

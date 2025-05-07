@@ -44,6 +44,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::subscripcion.subscripcion"
+    },
+    "curso": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::curso.curso",
+      "inversedBy": "instancia_cursos"
     }
   }
 }
