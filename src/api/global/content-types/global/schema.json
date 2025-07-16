@@ -35,16 +35,6 @@
       "component": "shared.seo",
       "repeatable": false
     },
-    "cursos": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::curso.curso"
-    },
-    "testimonios": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::testimonio.testimonio"
-    },
     "headerimage": {
       "type": "media",
       "multiple": true,
@@ -53,6 +43,13 @@
         "files",
         "videos",
         "audios"
+      ]
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.rich-text",
+        "shared.media"
       ]
     }
   }
